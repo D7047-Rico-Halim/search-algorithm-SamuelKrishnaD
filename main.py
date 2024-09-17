@@ -4,10 +4,22 @@ from graphs import bfs, dfs, ucs, greedy_bfs, a_star
 
 # Declare the graph as an adjacency list with edge weights
 graph = {
-    <your code here>
+    'B':[('C',2), ('D',5)],
+    'A':[('B',1), ('C',4)],
+    'C':[('D',1), ('E',3)],
+    'D':[('F',2)],
+    'E':[('F',1)],
+    'F':[('G',3)],
+    'G':[]
 }
 
 # Declare the heuristic values for each node
 heuristics = {
-    <your code here>
+    'A': 7,
+    'B': 6,
+    'C': 4,
+    'D': 3,
+    'E': 2,
+    'F': 1,
+    'G': 0
 }
